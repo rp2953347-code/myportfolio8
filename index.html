@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Roopa • Portfolio</title>
+  <meta name="description" content="Roopa — BCA student & Web Developer. Portfolio showcasing web projects, skills, and contact." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header" id="home">
+    <nav class="nav container">
+      <a class="brand" href="#home">Roopa<span class="dot">.</span></a>
+
+      <button id="nav-toggle" class="nav-toggle"><i class="fa fa-bars"></i></button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-ghost"><i class="fa fa-moon"></i></button>
+        <a href="resume.pdf" class="btn btn-primary" download>Download CV</a>
+      </div>
+    </nav>
+
+    <div class="hero container">
+      <div class="hero-left">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Roopa</h1>
+        <h2 class="typing"><span id="typed"></span><span class="cursor">|</span></h2>
+
+        <p class="lead">BCA student & Web Developer. I create clean websites and simple front-end projects.</p>
+
+        <div class="hero-cta">
+          <a href="#portfolio" class="btn btn-outline">View Projects</a>
+          <a href="#contact" class="btn btn-primary">Hire Me</a>
+        </div>
+
+        <div class="skills-inline">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Java</span><span>MySQL</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="profile-card">
+          <img src="https://via.placeholder.com/320x320.png?text=Roopa" alt="Roopa" />
+          <div class="profile-meta">
+            <h3>Roopa</h3>
+            <p>BCA • Web Developer</p>
+            <div class="socials">
+              <a href="#" target="_blank"><i class="fa fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+              <a href="mailto:rp2953347@gmail.com"><i class="fa fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <div class="section-grid">
+        <div>
+          <h2>About Me</h2>
+          <p>I’m a BCA student passionate about web development. I build clean, responsive, and simple websites.</p>
+
+          <ul class="about-list">
+            <li><strong>Education:</strong> BCA</li>
+            <li><strong>Skills:</strong> HTML, CSS, JavaScript, Java, MySQL</li>
+            <li><strong>Tools:</strong> VSCode, Git, GitHub</li>
+          </ul>
+
+          <a href="mailto:rp2953347@gmail.com" class="btn btn-outline">Email Me</a>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat"><h3>4+</h3><p>Projects</p></div>
+          <div class="stat"><h3>1</h3><p>Internship</p></div>
+          <div class="stat"><h3>500+</h3><p>Lines of Code</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section alt container">
+      <h2>Services</h2>
+      <p class="muted">I help students and small businesses create simple websites.</p>
+
+      <div class="cards">
+        <article class="card">
+          <i class="fa fa-code card-icon"></i>
+          <h3>Web Development</h3>
+          <p>Responsive static websites using HTML, CSS, and JS.</p>
+        </article>
+
+        <article class="card">
+          <i class="fa fa-paint-brush card-icon"></i>
+          <h3>UI Design</h3>
+          <p>Simple and clean UI mockups.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="portfolio" class="section container">
+      <h2>Portfolio</h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="https://via.placeholder.com/600x360.png?text=Project+1" />
+          <div class="project-body">
+            <h3>Simple Web Design</h3>
+            <p>Clean responsive layout built with HTML/CSS.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="https://via.placeholder.com/600x360.png?text=Project+2" />
+          <div class="project-body">
+            <h3>Mini JavaScript App</h3>
+            <p>Basic functionality with clean UI.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt container">
+      <h2>Contact</h2>
+      <p class="muted">Send a message or email me directly.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><strong>Email:</strong> <a href="mailto:rp2953347@gmail.com">rp2953347@gmail.com</a></p>
+          <p><strong>Location:</strong> India</p>
+        </div>
+
+        <form id="contact-form" class="contact-form" action="">
+          <label>Your name</label>
+          <input id="name" name="name" required />
+
+          <label>Email</label>
+          <input id="email" type="email" name="_replyto" required />
+
+          <label>Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>Roopa</strong><p class="muted small">BCA • Web Developer</p></div>
+      <div class="footer-links">
+        <a href="#portfolio">Projects</a>
+        <a href="#services">Services</a>
+      </div>
+      <div><p class="muted small">© <span id="year"></span> Roopa</p></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

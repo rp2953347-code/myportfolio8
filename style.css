@@ -1,0 +1,43 @@
+:root {
+  --bg: #0f0f0f;
+  --card: #1a1a1a;
+  --text: #ffffff;
+  --muted: #ababab;
+  --accent: #50e3c2;
+  --radius: 10px;
+}
+
+body {
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Inter, sans-serif;
+}
+
+.container { max-width:1100px; margin:auto; padding:20px; }
+
+/* Navbar */
+.nav { display:flex; align-items:center; }
+.nav-links { display:flex; gap:18px; }
+.nav-link { color:var(--muted); text-decoration:none; }
+.nav-link:hover { color:var(--text); }
+.brand { font-size:22px; font-weight:700; color:var(--text); }
+.dot { color:var(--accent); }
+
+/* Buttons */
+.btn { background:var(--accent); padding:10px 16px; border-radius:var(--radius); border:0; text-decoration:none; font-weight:700; color:#000; }
+.btn-outline { background:transparent; border:1px solid #333; color:var(--text); padding:10px 16px; border-radius:var(--radius); }
+
+/* Hero */
+.hero { display:flex; gap:28px; align-items:center; padding:40px 0; }
+.hero-right img { width:100%; border-radius:var(--radius); }
+
+/* Card sections */
+.card, .project-card, .contact-info, .contact-form {
+  background:var(--card);
+  padding:18px;
+  border-radius:var(--radius);
+}
+
+/* Footer */
+.site-footer { padding:20px 0; border-top:1px solid #222; margin-top:30px; }
