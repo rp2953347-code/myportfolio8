@@ -3,25 +3,30 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Roopa • Portfolio</title>
-  <meta name="description" content="Roopa — BCA student & Web Developer. Portfolio showcasing web projects, skills, and contact." />
+  <title>Roopa P • Portfolio</title>
+  <meta name="description" content="Roopa p — BCA student & Web Developer. Portfolio showcasing web projects, skills, and contact." />
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@600&display=swap" rel="stylesheet">
 
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <!-- Icons (simple) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pap..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css" />
-</head>
 
+  <!-- Open Graph (update image if you add one) -->
+  <meta property="og:title" content="Roopa P — Portfolio" />
+  <meta property="og:description" content="Web developer • BCA • My projects, skills, and contact." />
+</head>
 <body>
   <header class="site-header" id="home">
     <nav class="nav container">
       <a class="brand" href="#home">Roopa<span class="dot">.</span></a>
 
-      <button id="nav-toggle" class="nav-toggle"><i class="fa fa-bars"></i></button>
+      <button id="nav-toggle" aria-label="Toggle navigation" class="nav-toggle">
+        <i class="fa fa-bars"></i>
+      </button>
 
       <ul class="nav-links" id="nav-links">
         <li><a href="#home" class="nav-link">Home</a></li>
@@ -32,7 +37,7 @@
       </ul>
 
       <div class="nav-actions">
-        <button id="theme-toggle" class="btn-ghost"><i class="fa fa-moon"></i></button>
+        <button id="theme-toggle" class="btn-ghost" aria-label="Toggle dark mode"><i class="fa fa-moon"></i></button>
         <a href="resume.pdf" class="btn btn-primary" download>Download CV</a>
       </div>
     </nav>
@@ -40,31 +45,30 @@
     <div class="hero container">
       <div class="hero-left">
         <p class="eyebrow">Hello, I'm</p>
-        <h1>Roopa</h1>
+        <h1>Roopa P</h1>
         <h2 class="typing"><span id="typed"></span><span class="cursor">|</span></h2>
-
-        <p class="lead">BCA student & Web Developer. I create clean websites and simple front-end projects.</p>
+        <p class="lead">BCA student &amp; Web Developer. I build clean, responsive websites and easy-to-use web apps. Looking for internships and freelance projects.</p>
 
         <div class="hero-cta">
           <a href="#portfolio" class="btn btn-outline">View Projects</a>
           <a href="#contact" class="btn btn-primary">Hire Me</a>
         </div>
 
-        <div class="skills-inline">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Java</span><span>MySQL</span>
+        <div class="skills-inline" aria-hidden="true">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Java</span><span>MySQL</span><span>Python</span>
         </div>
       </div>
 
-      <div class="hero-right">
+      <div class="hero-right" aria-hidden="true">
         <div class="profile-card">
-          <img src="https://via.placeholder.com/320x320.png?text=Roopa" alt="Roopa" />
+          <img src="https://via.placeholder.com/320x320.png?text=Anil" alt="Anil Kumar" />
           <div class="profile-meta">
-            <h3>Roopa</h3>
+            <h3>Roopa P</h3>
             <p>BCA • Web Developer</p>
             <div class="socials">
-              <a href="#" target="_blank"><i class="fa fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-              <a href="mailto:rp2953347@gmail.com"><i class="fa fa-envelope"></i></a>
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa fa-github"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+              <a href="mailto:rp2953347@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
             </div>
           </div>
         </div>
@@ -78,21 +82,30 @@
       <div class="section-grid">
         <div>
           <h2>About Me</h2>
-          <p>I’m a BCA student passionate about web development. I build clean, responsive, and simple websites.</p>
+          <p>I’m a motivated BCA student with hands-on experience building responsive websites and small web applications. I enjoy turning ideas into working products — focusing on clean UI, good performance, and maintainable code.</p>
 
           <ul class="about-list">
             <li><strong>Education:</strong> BCA</li>
-            <li><strong>Skills:</strong> HTML, CSS, JavaScript, Java, MySQL</li>
-            <li><strong>Tools:</strong> VSCode, Git, GitHub</li>
+            <li><strong>Stack:</strong> HTML, CSS, JavaScript, Java, Python, MySQL</li>
+            <li><strong>Tools:</strong> VSCode, Git, GitHub, Figma</li>
           </ul>
 
           <a href="mailto:rp2953347@gmail.com" class="btn btn-outline">Email Me</a>
         </div>
 
         <div class="about-stats">
-          <div class="stat"><h3>4+</h3><p>Projects</p></div>
-          <div class="stat"><h3>1</h3><p>Internship</p></div>
-          <div class="stat"><h3>500+</h3><p>Lines of Code</p></div>
+          <div class="stat">
+            <h3>5+</h3>
+            <p>Projects</p>
+          </div>
+          <div class="stat">
+            <h3>2</h3>
+            <p>Internships</p>
+          </div>
+          <div class="stat">
+            <h3>1k+</h3>
+            <p>Lines of code written (and counting)</p>
+          </div>
         </div>
       </div>
     </section>
@@ -100,41 +113,68 @@
     <!-- SERVICES -->
     <section id="services" class="section alt container">
       <h2>Services</h2>
-      <p class="muted">I help students and small businesses create simple websites.</p>
+      <p class="muted">I help small businesses and students build websites and simple web apps.</p>
 
       <div class="cards">
         <article class="card">
           <i class="fa fa-code card-icon"></i>
           <h3>Web Development</h3>
-          <p>Responsive static websites using HTML, CSS, and JS.</p>
+          <p>Responsive websites using HTML, CSS, and JavaScript. Clean, accessible, and optimized for performance.</p>
         </article>
 
         <article class="card">
           <i class="fa fa-paint-brush card-icon"></i>
-          <h3>UI Design</h3>
-          <p>Simple and clean UI mockups.</p>
+          <h3>UI / UX Design</h3>
+          <p>Mockups and simple prototypes — focused on clarity and usability. I use Figma to create tidy designs.</p>
+        </article>
+
+        <article class="card">
+          <i class="fa fa-mobile card-icon"></i>
+          <h3>App Frontend</h3>
+          <p>Static front-ends for mobile-first web apps. Integrations with simple backend APIs and databases.</p>
         </article>
       </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- PORTFOLIO -->
     <section id="portfolio" class="section container">
       <h2>Portfolio</h2>
+      <p class="muted">Selected projects — click View to open demo or Code to see repository.</p>
 
       <div class="projects-grid">
         <article class="project-card">
-          <img src="https://via.placeholder.com/600x360.png?text=Project+1" />
+          <img src="https://via.placeholder.com/600x360.png?text=Social+App" alt="Social App screenshot" />
           <div class="project-body">
-            <h3>Simple Web Design</h3>
-            <p>Clean responsive layout built with HTML/CSS.</p>
+            <h3>Social Media App (UI)</h3>
+            <p>Responsive UI prototype for a social app with feed, profiles, and posts. Built with HTML/CSS and JS interactions.</p>
+            <div class="project-actions">
+              <a href="#" class="btn btn-outline" target="_blank" rel="noopener">View</a>
+              <a href="#" class="btn" target="_blank" rel="noopener">Code</a>
+            </div>
           </div>
         </article>
 
         <article class="project-card">
-          <img src="https://via.placeholder.com/600x360.png?text=Project+2" />
+          <img src="https://via.placeholder.com/600x360.png?text=Music+App" alt="Music App screenshot" />
           <div class="project-body">
-            <h3>Mini JavaScript App</h3>
-            <p>Basic functionality with clean UI.</p>
+            <h3>Music App (Frontend)</h3>
+            <p>Music player UI with playlist and basic JavaScript player logic. Clean animations and mobile-friendly controls.</p>
+            <div class="project-actions">
+              <a href="#" class="btn btn-outline" target="_blank" rel="noopener">View</a>
+              <a href="#" class="btn" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="https://via.placeholder.com/600x360.png?text=Shopping+App" alt="Shopping App screenshot" />
+          <div class="project-body">
+            <h3>Online Shopping UI</h3>
+            <p>Product grid, filters, and cart UI. Focus on accessible layout and simple interactions.</p>
+            <div class="project-actions">
+              <a href="#" class="btn btn-outline" target="_blank" rel="noopener">View</a>
+              <a href="#" class="btn" target="_blank" rel="noopener">Code</a>
+            </div>
           </div>
         </article>
       </div>
@@ -143,25 +183,32 @@
     <!-- CONTACT -->
     <section id="contact" class="section alt container">
       <h2>Contact</h2>
-      <p class="muted">Send a message or email me directly.</p>
+      <p class="muted">Want to work together? Send a message or email me directly.</p>
 
       <div class="contact-grid">
         <div class="contact-info">
+          <h3>Get in touch</h3>
           <p><strong>Email:</strong> <a href="mailto:rp2953347@gmail.com">rp2953347@gmail.com</a></p>
           <p><strong>Location:</strong> India</p>
+          <div class="socials">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+          </div>
+          <p class="muted small">Or use the contact form — it uses Formspree for static hosting. See instructions below.</p>
         </div>
 
-        <form id="contact-form" class="contact-form" action="">
-          <label>Your name</label>
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/yourformid" method="POST">
+          <!-- Replace the action with your Formspree form endpoint or remove action to use mailto via JS fallback -->
+          <label for="name">Your name</label>
           <input id="name" name="name" required />
 
-          <label>Email</label>
+          <label for="email">Email</label>
           <input id="email" type="email" name="_replyto" required />
 
-          <label>Message</label>
+          <label for="message">Message</label>
           <textarea id="message" name="message" rows="5" required></textarea>
 
-          <button type="submit" class="btn btn-primary">Send</button>
+          <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
       </div>
     </section>
@@ -169,15 +216,22 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div><strong>Roopa</strong><p class="muted small">BCA • Web Developer</p></div>
+      <div>
+        <strong>Roopa P</strong>
+        <p class="muted small">BCA • Web Developer</p>
+      </div>
       <div class="footer-links">
         <a href="#portfolio">Projects</a>
         <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
       </div>
-      <div><p class="muted small">© <span id="year"></span> Roopa</p></div>
+      <div>
+        <p class="muted small">© <span id="year"></span> Roopa P. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
+  <!-- JS -->
   <script src="script.js"></script>
 </body>
 </html>
